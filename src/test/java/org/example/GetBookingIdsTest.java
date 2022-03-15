@@ -15,9 +15,8 @@ import static io.restassured.RestAssured.given;
  */
 public class GetBookingIdsTest
 {
-    /**
-     * Rigorous Test :-)
-     */
+
+    //TODO: This class is too big, should be refactored into smaller things.
     @Test
     public void getBookingIdsWihoutFilterTest()
     {

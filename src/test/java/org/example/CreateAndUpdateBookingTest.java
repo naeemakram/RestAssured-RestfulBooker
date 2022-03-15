@@ -7,9 +7,6 @@ import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-/**
- * Unit test for simple App.
- */
 public class CreateAndUpdateBookingTest extends  BookerBase
 {
   @Test
@@ -80,14 +77,6 @@ public class CreateAndUpdateBookingTest extends  BookerBase
  @Test
  public void updateBookingByPatchTest()
  {
-  JSONObject passJSON = new JSONObject();
-  passJSON.put("username",  "admin");
-  passJSON.put( "password", "password123");
-
-  Response tokenResponse = RestAssured.given().contentType("application/json").body(passJSON.toString()).post(" https://restful-booker.herokuapp.com/auth");
-
-  tokenResponse.prettyPrint();
-
   JSONObject jsonObject = new JSONObject();
   jsonObject.put("firstname", "Naeem");
   jsonObject.put("lastname", "Mal");
