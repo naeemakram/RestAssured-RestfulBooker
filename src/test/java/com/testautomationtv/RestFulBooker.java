@@ -1,4 +1,4 @@
-package org.example;
+package com.testautomationtv;
 
 import org.testng.annotations.Test;
 
